@@ -347,6 +347,7 @@ form textarea:hover {
 form button {
     display: flex;
     align-self: self-end;
+    margin-left: 2%;
     padding: 10px;
     background: #FFCF50;
     border:1px solid #626F47;
