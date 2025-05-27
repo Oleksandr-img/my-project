@@ -36,7 +36,7 @@ flkty.on('select', function() {
   showMenu(flkty.selectedIndex);
 });
 
-const btn = document.querySelector('.feedback form button');
+const btn = document.querySelector('#send');
 const form = document.querySelector('.feedback form');
 const preference = document.querySelector('.preference-added');
 const error = document.querySelector('.feedback .error');
