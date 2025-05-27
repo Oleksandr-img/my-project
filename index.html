@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Адаптивний односторінковий сайт для сервісу здорового харчування. Здорова їжа — якість, свіжість та турбота про ваше здоров’я.">
     <link rel="shortcut icon" href="./assets/img/ICON.png" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -52,7 +53,7 @@
                 <img src="./assets/img/4.jpg" alt="meal-four" id="meal-four" class="meal">
             </div>
         </section>
-        <div id="menu">
+        <section id="menu">
             <h1 class="title" data-u18n="menu.title">Наше меню</h1>
             <div class="swiper">
                 <div class="carousel">
@@ -64,7 +65,7 @@
                 <div class="menu-txt">
                     <div class="menu-one txt active">
                         <h3 data-u18n="menu.one.title">Меню №1 — «Японський баланс»</h3>
-                        <ul type="circle" data-u18n="menu.one.list"> 
+                        <ul data-u18n="menu.one.list"> 
                             <li></li> 
                             <li></li> 
                             <li></li> 
@@ -115,8 +116,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="feedback">
+        </section>
+        <section class="feedback">
             <form autocomplete="off">
                 <div class="user-info">
                     <label for="name" data-u18n="feedback.name.label">Ваше ім'я</label>
@@ -134,15 +135,15 @@
                 <span class="error" data-u18n="feedback.error">Будь ласка, введіть свої дані коректно.</span>
                 <span class="preference-added" data-u18n="feedback.sentMessage">Інформацію надіслано !<br> Невдовзі наш працівник зв'яжеться з вами.<br>Гарного дня.</span>
             </div>
-        </div>
+        </section>
     </main>
     <footer id="contacts">
         <div class="social">
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
         </div>
-        <h1 data-u18n="footer.title">Здорова Їжа</h1>
+        <h3 data-u18n="footer.title">Здорова Їжа</h3>
         <address>
             <span data-u18n="footer.address">вул. Смаколиків, 12, Дніпро, Україна</span><br />
             <a href="mailto:info@zdorova-yizha.ua" data-u18n="footer.email">info@zdorova-yizha.ua</a><br />
