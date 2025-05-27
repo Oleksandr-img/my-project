@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./assets/img/ICON.png" type="image/x-icon" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&family=Pacifico&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title data-u18n="title">Здорова Їжа</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/img/salad.png" alt="salad" />
+            <h1 data-u18n="header.title">Здорова їжа</h1>
+        </div>
+        <nav class="navigation">
+            <a href="/" data-u18n="nav.home">Головна</a>
+            <a href="#about-us" data-u18n="nav.about">Про нас</a>
+            <a href="#menu" data-u18n="nav.menu">Меню</a>
+            <a href="#contacts" data-u18n="nav.contacts">Контакти</a>
+        </nav>
+        <div class="buttons">
+            <div class="lang">
+                <button type="button" class="lang-btn" data-lang="en" data-u18n="lang.en">Eng</button>
+                <span>|</span>
+                <button type="button" class="lang-btn" data-lang="uk" data-u18n="lang.ukr">Укр</button>
+            </div>
+            <div class="theme-switch">
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle" />
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about-us">
+            <div id="about-us">
+                <h1 data-u18n="about.title">Чому саме ми</h1>
+                <p data-u18n="about.text">Обираючи «<span>Здорова Їжа</span>», ви обираєте якість, свіжість і турботу про своє здоров’я. Ми — команда однодумців, які вірять, що правильне харчування — це основа довгого і щасливого життя. У нашому асортименті лише натуральні продукти без шкідливих добавок, що вирощені з любов’ю та дбайливістю. Ми тісно співпрацюємо з перевіреними постачальниками, щоб гарантувати вам безпеку і найкращий смак. <br><br>
+                Ми розуміємо, наскільки важливо мати зручний та зрозумілий сервіс, тому постійно вдосконалюємо наш сайт і службу підтримки. Наша мета — зробити здорове харчування доступним для кожного, незалежно від віку чи стилю життя. Ми підтримуємо вас на шляху до здоров’я, пропонуючи корисні поради та рецепти, які допоможуть зробити раціон збалансованим і різноманітним. <br><br>
+                Довіряючи нам, ви отримуєте не просто продукти, а справжню турботу, професіоналізм і любов до натуральної їжі. Обирайте «<span>Здорова Їжа</span>» — обирайте здоров’я і якість кожного дня.</p>
+            </div>
+            <div class="main-images">
+                <img src="./assets/img/1.jpg" alt="meal-one" id="meal-one" class="meal">
+                <img src="./assets/img/2.jpg" alt="meal-two" id="meal-two" class="meal">
+                <img src="./assets/img/3.jpg" alt="meal-three" id="meal-three" class="meal">
+                <img src="./assets/img/4.jpg" alt="meal-four" id="meal-four" class="meal">
+            </div>
+        </section>
+        <div id="menu">
+            <h1 class="title" data-u18n="menu.title">Наше меню</h1>
+            <div class="swiper">
+                <div class="carousel">
+                    <div class="carousel-cell one"><img src="./assets/img/menu-1.png" alt="menu-1"></div>
+                    <div class="carousel-cell two"><img src="./assets/img/menu-2.png" alt="menu-2"></div>
+                    <div class="carousel-cell three"><img src="./assets/img/menu-3.png" alt="menu-3"></div>
+                    <div class="carousel-cell four"><img src="./assets/img/menu-4.png" alt="menu-4"></div>
+                </div>
+                <div class="menu-txt">
+                    <div class="menu-one txt active">
+                        <h3 data-u18n="menu.one.title">Меню №1 — «Японський баланс»</h3>
+                        <ul type="circle" data-u18n="menu.one.list"> 
+                            <li></li> 
+                            <li></li> 
+                            <li></li> 
+                            <li></li> 
+                        </ul> 
+                        <span data-u18n="menu.one.desc">Легкий і збалансований обід, що допомагає підтримувати бадьорість без відчуття тяжкості.<br> 
+                        Оптимальний вибір для продуктивної роботи чи навчання.<br>
+                        Харчова цінність: Калорії: ~550 ккал; Білки: 25 г; Жири: 18 г; Вуглеводи: 60 г.
+                        </span>
+                    </div>
+                    <div class="menu-two txt">
+                        <h3 data-u18n="menu.two.title">>Меню №2 — «Овочева паста з куркою»</h3>
+                        <ul type="circle" data-u18n="menu.two.list"> 
+                            <li></li> 
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul> 
+                        <span data-u18n="menu.two.desc">Смачна страва з насиченим овочевим смаком, що допомагає відновити сили після активного дня.<br> 
+                        Чудовий варіант для легкої вечері або ситного обіду.<br> 
+                        Харчова цінність: Калорії: ~610 ккал; Білки: 30 г; Жири: 17 г; Вуглеводи: 66 г.
+                        </span>
+                    </div>
+                    <div class="menu-three txt">
+                        <h3 data-u18n="menu.three.title">Меню №3 — «Азійська гармонія»</h3>
+                        <ul type="circle" data-u18n="menu.three.list"> 
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul> 
+                        <span data-u18n="menu.three.desc">Насичений обід з яскравими азійськими нотками, що допомагає підтримати оптимальний рівень поживних речовин.<br> 
+                        Ідеально підходить для перерви в роботі або затишної вечері.<br> 
+                        Харчова цінність: Калорії: ~620 ккал; Білки: 28 г; Жири: 20 г; Вуглеводи: 70 г.
+                        </span>
+                    </div>
+                    <div class="menu-four txt">
+                        <h3 data-u18n="menu.four.title">Меню №4 — «Середземноморський штрих»</h3>
+                        <ul type="circle" data-u18n="menu.four.list"> 
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul> 
+                        <span data-u18n="menu.four.desc">Багатий на омега-3 та вітаміни комплекс, який сприяє зміцненню серцево-судинної системи та підвищенню захисних функцій організму.<br> 
+                        Прекрасний вибір для підтримки тонусу і гарного самопочуття.<br> 
+                        Харчова цінність: Калорії: ~640 ккал; Білки: 32 г; Жири: 22 г; Вуглеводи: 65 г.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="feedback">
+            <form autocomplete="off">
+                <div class="user-info">
+                    <label for="name" data-u18n="feedback.name.label">Ваше ім'я</label>
+                    <input type="text" name="name" id="name" placeholder="Ім'я" data-u18n-placeholder="feedback.name.placeholder">
+                    <label for="email" data-u18n="feedback.email.label">Імейл</label>
+                    <input type="email" name="email" id="email" placeholder="Імейл" data-u18n-placeholder="feedback.email.placeholder">
+                </div>
+                <div class="meal-preferences">   
+                    <label for="order" data-u18n="feedback.order.label">Ваші побажання щодо меню</label>
+                    <textarea name="order" placeholder="Побажання" data-u18n-placeholder="feedback.order.placeholder" id="order"></textarea>
+                </div>
+                <button type="button" data-u18n="feedback.button">Надіслати</button>
+            </form>
+            <div class="feedback-message">
+                <span class="error" data-u18n="feedback.error">Будь ласка, введіть свої дані коректно.</span>
+                <span class="preference-added" data-u18n="feedback.sentMessage">Інформацію надіслано !<br> Невдовзі наш працівник зв'яжеться з вами.<br>Гарного дня.</span>
+            </div>
+        </div>
+    </main>
+    <footer id="contacts">
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+        <h1 data-u18n="footer.title">Здорова Їжа</h1>
+        <address>
+            <span data-u18n="footer.address">вул. Смаколиків, 12, Дніпро, Україна</span><br />
+            <a href="mailto:info@zdorova-yizha.ua" data-u18n="footer.email">info@zdorova-yizha.ua</a><br />
+            <a href="tel:+380671234567" data-u18n="footer.phone">+38 (067) 123-45-67</a>
+        </address>
+    </footer>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./js/lang.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+{
+  "title": "Healthy Food",
+  "header": {
+    "title": "Healthy Food"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "menu": "Menu",
+    "contacts": "Contacts"
+  },
+  "lang": {
+    "en": "Eng",
+    "ukr": "Ukr"
+  },
+  "about": {
+    "title": "Why Choose Us",
+    "text": "By choosing “Healthy Food,” you’re choosing quality, freshness, and care for your health. We are a team of like-minded people who believe that proper nutrition is the foundation of a long and happy life. Our selection includes only natural products without harmful additives, grown with love and care. We work closely with trusted suppliers to ensure your safety and the best taste.\n\nWe understand how important it is to have a convenient and user-friendly service, so we constantly improve our website and support service. Our goal is to make healthy eating accessible to everyone, regardless of age or lifestyle. We support you on your journey to health by offering helpful tips and recipes to make your diet balanced and varied.\n\nBy trusting us, you’re getting more than just products — you’re receiving real care, professionalism, and a love for natural food. Choose “Healthy Food” — choose health and quality every day."
+  },
+  "menu": {
+    "title": "Our Menu",
+    "one": {
+      "title": "Menu №1 — “Japanese Balance”",
+      "list": [
+        "Steamed rice with sesame",
+        "Breaded chicken cutlet",
+        "Carrot salad",
+        "Egg roll, fresh vegetables, lettuce"
+      ],
+      "desc": "A light and balanced lunch that keeps you energized without heaviness.\nThe optimal choice for productive work or study.\nNutrition: Calories: ~550 kcal; Protein: 25 g; Fat: 18 g; Carbs: 60 g."
+    },
+    "two": {
+      "title": "Menu №2 — “Vegetable Pasta with Chicken”",
+      "list": [
+        "Wheat pasta with a mix of carrots, broccoli, peas, corn, tomatoes, and some olives",
+        "Aromatic spices and a light olive oil sauce",
+        "Juicy chicken pieces arranged on the sides",
+        "Green salad with lemon dressing"
+      ],
+      "desc": "A tasty dish with rich vegetable flavor, helping you recharge after a busy day.\nGreat option for a light dinner or hearty lunch.\nNutrition: Calories: ~610 kcal; Protein: 30 g; Fat: 17 g; Carbs: 66 g."
+    },
+    "three": {
+      "title": "Menu №3 — “Asian Harmony”",
+      "list": [
+        "Steamed rice with sesame",
+        "Teriyaki chicken with broccoli",
+        "Baked tomatoes",
+        "Potato croquette and bun"
+      ],
+      "desc": "A hearty meal with vibrant Asian flavors that supports optimal nutrition.\nPerfect for a work break or cozy dinner.\nNutrition: Calories: ~620 kcal; Protein: 28 g; Fat: 20 g; Carbs: 70 g."
+    },
+    "four": {
+      "title": "Menu №4 — “Mediterranean Touch”",
+      "list": [
+        "Fried fish with a wedge of lime",
+        "Country-style potatoes with spices",
+        "Mini salad: bell pepper, cucumber, cherry tomatoes",
+        "Feta cheese"
+      ],
+      "desc": "Rich in omega-3 and vitamins, this meal supports cardiovascular health and strengthens immunity.\nA great choice for staying energized and feeling good.\nNutrition: Calories: ~640 kcal; Protein: 32 g; Fat: 22 g; Carbs: 65 g."
+    }
+  },
+  "feedback": {
+    "name": {
+      "label": "Your Name",
+      "placeholder": "Name"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Email"
+    },
+    "order": {
+      "label": "Your Menu Preferences",
+      "placeholder": "Preferences"
+    },
+    "button": "Send",
+    "error": "Please enter your data correctly.",
+    "sentMessage": "Information sent!\nOur representative will contact you soon.\nHave a great day."
+  },
+  "footer": {
+    "title": "Healthy Food",
+    "address": "12 Smakolyky St, Dnipro, Ukraine",
+    "email": "info@zdorova-yizha.ua",
+    "phone": "+38 (067) 123-45-67"
+  }
+}
