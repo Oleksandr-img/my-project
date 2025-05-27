@@ -99,6 +99,7 @@ nav a:hover::before {
 }
 
 .lang {
+    margin-left: 20%;
     display: flex;
     justify-content: center;
     align-self: flex-start;
