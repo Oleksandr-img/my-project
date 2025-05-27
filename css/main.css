@@ -62,7 +62,7 @@ nav {
     width: 50%;
     display: flex;
     justify-content: flex-start;
-    gap: 20%;
+    gap: 50px;
     align-items: center;
 }
 
@@ -191,6 +191,7 @@ main {
 
 #about-us h1 {
     margin-left: 10px;
+    margin-bottom: 20px;
     font-family: "Great Vibes", cursive;
     font-size: xx-large;
     font-weight: 900;
@@ -350,7 +351,7 @@ form textarea:hover {
 #send {
     width: 200px;
     height: auto;
-    margin-left: 30%;
+    margin-left: 200px;
     padding: 10px;
     background: #FFCF50;
     border:1px solid #626F47;
