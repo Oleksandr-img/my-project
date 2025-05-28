@@ -628,8 +628,8 @@ body.dark address a {color: #EEEEEE;}
     }
     nav a {
         width: 20%;
-        font-weight: 400;
-        font-size: 24px;
+        font-weight: 500;
+        font-size: 18px;
     }
     #about-us {
         width: 50%;
@@ -719,7 +719,7 @@ body.dark address a {color: #EEEEEE;}
     }
 }
 
-@media (min-width: 425px) and (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 767px) {
     a {
         font-family: "Spectral", serif;
         font-size: 12px;
@@ -734,7 +734,10 @@ body.dark address a {color: #EEEEEE;}
         border-bottom: 1px solid #626F47;
     }
 
-    .logo {margin-left: 5px;}
+    .logo {
+        margin-left: 5px;
+        width: 30%;
+    }
 
     .logo img {
         width: 25px;
@@ -749,7 +752,7 @@ body.dark address a {color: #EEEEEE;}
     }
 
     nav {
-        width: 30%;
+        width: 50%;
         display: flex;
         flex-direction: column;
         gap: 3px;
@@ -879,8 +882,9 @@ body.dark address a {color: #EEEEEE;}
     }
 
     .menu-txt {
-        width: 90%;
+        width: 80%;
         min-height: 300px;
+        margin-left: 0;
     }
 
     .menu-txt ul {
@@ -979,6 +983,7 @@ body.dark address a {color: #EEEEEE;}
     }
 
     address {
+        width: 60%;
         margin-right: 5px;
         font-size: 13px;
         font-weight: 400;
@@ -997,3 +1002,6 @@ body.dark address a {color: #EEEEEE;}
 
 }
 
+/* @media (min-width: 320px) and (max-width: 374px) {
+
+}*/
