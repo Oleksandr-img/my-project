@@ -54,7 +54,7 @@ header {
     margin-left: 10px;
     font-family: "Pacifico", cursive;
     font-weight: 400;
-    color: #FFCF50;
+    color: #F6C90E;
     -webkit-text-stroke: 1px #626F47;
 }
 
@@ -128,7 +128,6 @@ nav a::before {
 
 .slider {
   position: absolute;
-  cursor: pointer;
   top: 0; left: 0; right: 0; bottom: 0;
   background-color: #ccc;
   transition: 0.4s;
@@ -221,7 +220,7 @@ main {
     text-align: center;
     margin-top: 50px;
     font-weight: 900;
-    color: #FFCF50;
+    color: #F6C90E;
     -webkit-text-stroke: 1px #626F47;
     }
 
@@ -269,7 +268,7 @@ main {
   cursor: default;
 }
 
-.flickity-button svg path {fill: #FFCF50;}
+.flickity-button svg path {fill: #F6C90E;}
 
 .menu-txt {
     width: 500px;
@@ -321,19 +320,6 @@ form textarea {
     border-radius: 10px;
     background: #fefae0;
     outline: none;
-}
-
-#send {
-    width: 200px;
-    height: auto;
-    margin-left: 40%;
-    margin-bottom: 10px;
-    padding: 10px;
-    background: #FFCF50;
-    border:1px solid #626F47;
-    border-radius: 10px;
-    color: #626F47;
-    cursor: pointer;
 }
 
 .user-info {
@@ -395,6 +381,20 @@ textarea {
     visibility: visible;
 }
 
+#send {
+    width: 200px;
+    height: auto;
+    margin-left: 40%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #F6C90E;
+    border:1px solid #626F47;
+    border-radius: 10px;
+    color: #626F47;
+    cursor: pointer;
+}
+
+
 footer {
     width: 100%;
     height: 150px;
@@ -438,7 +438,7 @@ footer {
 footer h1 {
     font-family: "Pacifico", cursive;
     font-weight: 400;
-    color: #FFCF50;
+    color: #F6C90E;
     -webkit-text-stroke: 1px #626F47;
 }
 
@@ -540,7 +540,7 @@ body.dark .fa-facebook-f {color: #1877F2;}
 body.dark .fa-telegram {color: #0088cc;}
 
 body.dark footer h1 {
-    color: #FFCF50;
+    color: #F6C90E;
     -webkit-text-stroke: 1px #F6C90E;
 }
 
@@ -551,22 +551,18 @@ body.dark address a {color: #EEEEEE;}
     nav a:hover {
         color:#626F47;
     }
-
     nav a:hover::before {
         transform: scaleX(1);
     }
-
     .lang button:hover {
         cursor: pointer;
         color: #626F47;
     }
-
+    .slider {cursor: pointer;}
     .flickity-button {box-shadow: 0 0 5px #626F47;}
-
     .flickity-button:hover {
         background-color: #a4b465;
     }
-
     form input:hover,
     form textarea:hover {
         border: none;
@@ -574,48 +570,37 @@ body.dark address a {color: #EEEEEE;}
         -moz-box-shadow: 0px 0px 15px 0px rgba(255, 207, 80, 1);
         box-shadow: 0px 0px 15px 0px rgba(255, 207, 80, 1);
     }
-
     #send:hover {
         background: #a4b465;
-        color:#FFCF50;
-        border: 1px solid #FFCF50;
+        color:#F6C90E;
+        border: 1px solid #F6C90E;
     }
-
     .feedback-message .error {
         -webkit-box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
         -moz-box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
         box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
     }
-
     .social a:hover {transform: scale(1.5);}
-
     body.dark nav a:hover {color:#F6C90E;}
-
     body.dark .lang button:hover {color: #F6C90E;}
-
     body.dark .flickity-button {box-shadow: 0 0 5px #F6C90E;}
-
     body.dark .flickity-button:hover {background-color: #303841;}
-
     body.dark form input:hover,
     body.dark form textarea:hover {
         -webkit-box-shadow: 0px 0px 12px 0px rgba(246, 201, 14, 1);
         -moz-box-shadow: 0px 0px 12px 0px rgba(246, 201, 14, 1);
         box-shadow: 0px 0px 12px 0px rgba(246, 201, 14, 1);
     }
-
     body.dark form button:hover {
         background: #303841;
         color:#EEEEEE;
         border: 1px solid #F6C90E;
     }
-
     body.dark .feedback-message .error {
         -webkit-box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
         -moz-box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
         box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
     }
-
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -625,57 +610,46 @@ body.dark address a {color: #EEEEEE;}
     height: 100px;
     font-size: 16px;
   }
-
   .logo {
     height: 80px;
     margin-left: 20px;
     }
-
     .logo img {
     width: 30px;
     height: 30px;
     }
-
-
     .logo h1 {
     font-weight: 300;
     font-size: 24px;
     }
-
     nav {
     width: 50%;
     gap: 30px;
     }
-
     nav a {
         width: 20%;
         font-weight: 400;
         font-size: 24px;
     }
-
     #about-us {
         width: 50%;
         font-weight: 500;
         font-size: 24px;
     }
-
     #about-us h1 {
         margin-bottom: 20px;
         font-size: 24px;
         font-weight: 600;
     }
-
     .main-images {
         display: grid;
         grid-template-columns: 1fr;
         gap: 20px;
     }
-
     .meal {
         width: 150px;
         height: 150px;
     }
-
     #menu {
         width: 90%;
         margin-top: 70px;
@@ -686,76 +660,340 @@ body.dark address a {color: #EEEEEE;}
         align-items: center;
         gap: 30px;
     }
-
     .title {
         margin-top: 30px;
         font-weight: 600;
         font-size: 24px;
     }
-
     .swiper {
         width: 100%;
         display: flex;
         justify-content: center;
         gap: 25px;
     }
-
     .feedback {
         margin-top: 60px;
         font-weight: 500;
     }
-
     form {
         width: 40%;
         min-height: 200px;
         margin: 10px 50px;
         font-weight: 600;
     }
-
     #send {
         width: 100px;
         margin-left: 40%;
     }
-
     .user-info {gap: 5px;}
-
     .meal-preferences {
         margin-left: 30px;
         gap: 5px;
     }
-
     textarea {font-size: 14px;}
-
     footer {
         height: 150px;
     }
-
     .social {
         width: 20%;
         margin-left: 5%;
         gap: 10px;
     }
-
     .social a {
         width: 20px;
         height: 20px;
         font-size: 24px;
     }
-
     footer h1 {
         font-weight: 300;
         font-size: 24px;
     }
-
     address {
         margin-right: 30px;
         font-size: 16px;
         font-weight: 500;
     }
-
     address a {
         font-size: 18px;
         font-weight: 700;
     }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    a {
+        font-family: "Spectral", serif;
+        font-size: 12px;
+        font-weight: 300;
+        color: #A4B465;
+    }
+
+    header {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        border-bottom: 1px solid #626F47;
+    }
+
+    .logo {margin-left: 5px;}
+
+    .logo img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .logo h1 {
+        margin-left: 5px;
+        font-weight: 500;
+        font-size: 24px;
+        -webkit-text-stroke: 1px #626F47;
+    }
+
+    nav {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    .buttons {width: 30%;}
+
+    .lang {
+        margin-left: 0;
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+    .lang button {
+        font-size: 9px;
+        color: #626F47; 
+    }
+
+    .theme-switch {margin-right: 5px;}
+
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 15px;
+    }
+
+    .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .slider {
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background-color: #ccc;
+        transition: 0.4s;
+        border-radius: 20px;
+    }
+
+    .slider::before {
+        height: 13px;   
+        width: 13px;    
+        left: 1px;
+        bottom: 1px;
+    }
+
+    input:checked + .slider::before {
+        transform: translateX(16px);  
+    }
+
+    #about-us {
+        width: 40%;
+        margin: 5px 25px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    #about-us h1 {
+        margin-left: 5px;
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 700;
+        word-spacing: 2px;
+    }
+
+    .main-images {
+        grid-template-columns: 1fr; 
+        gap: 100px;
+    }
+
+    .meal {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+    }
+
+    #menu {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0;
+        min-height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        background: #fefae0;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+    }
+
+    .title {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 18;
+        -webkit-text-stroke: 1px #626F47;
+    }
+
+    .swiper {
+        width: 100%;
+        min-height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+        outline: none;
+        gap: 50px;
+    }
+
+    .carousel {
+        width: 300px;
+        height: 150px;
+    }
+
+    .carousel-cell {
+        width: 100%;
+        height: 150px;
+    }
+
+    .flickity-button {
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu-txt {
+        width: 90%;
+        min-height: 300px;
+    }
+
+    .menu-txt ul {
+        list-style-type: none;
+        overflow-wrap: break-word;
+    }
+
+    .feedback {
+        width: 100%;
+        min-height: 300px;
+        margin-top: 50px;
+        font-weight: 300;
+    }
+
+    form {
+        width: 100%;
+        margin:0 0 0 5px;
+        min-height: 300px;
+        font-weight: 500;
+        font-size: 16px;
+        gap: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    form input,
+    form textarea {
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+    .user-info {
+        gap: 2px;  
+    }
+
+    .meal-preferences {
+        margin: 0;
+        gap: 2px;
+    }
+
+    textarea {
+        width: 200px;
+        height: 100px;
+    }
+
+    .feedback-message {
+        min-height: 100px;
+        width: 250px;
+        margin-top: 0;
+        margin-right: 5px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .feedback-message span {border-radius: 5px;}
+
+    #send {
+        width: 100px;
+        height: auto;
+        margin-left: 5px;
+        margin-top: -30px;
+        padding: 10px;
+        background: #F6C90E;
+        border:1px solid #626F47;
+        border-radius: 10px;
+        color: #626F47;
+        cursor: pointer;
+    }
+
+    footer {
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .social {
+        width: 30%;
+        margin-left: 5px;
+        gap: 10px;
+    }
+
+    .social a {
+        width: 10px;
+        height: 10px;
+        font-size: 18px;
+    }
+
+    footer h1 {
+        font-size: 24px;
+        font-weight: 300;
+        color: #F6C90E;
+        -webkit-text-stroke: 1px #626F47;
+    }
+
+    address {
+        margin-right: 5px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    address a {
+        color: #626F47;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    body.dark #menu {
+        border-left: 0;
+        border-right: 0;
+    }
+
 }
 
