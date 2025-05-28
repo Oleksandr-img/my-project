@@ -20,7 +20,7 @@ body {
 
 a {
     font-family: "Spectral", serif;
-    font-size: x-large;
+    font-size: 24px;
     font-weight: 800;
     text-decoration: none;
     color: #A4B465;
@@ -85,12 +85,6 @@ nav a::before {
     transform: scaleX(0);
     transition: transform 0.3s;
 }
-nav a:hover {
-    color:#626F47;
-}
-nav a:hover::before {
-    transform: scaleX(1);
-}
 
 .buttons {
     width: 20%;
@@ -115,11 +109,6 @@ nav a:hover::before {
     text-decoration: underline;
     text-decoration-color: #A4B465;
     color: #a4b465; 
-}
-
-.lang button:hover {
-    cursor: pointer;
-    color: #626F47;
 }
 
 .theme-switch {margin-right: 20px;}
@@ -185,7 +174,7 @@ main {
     margin: 10px 50px;
     font-family: "Caveat", cursive;
     font-weight: 700;
-    font-size: xx-large;
+    font-size: 32px;
     color: #a4b465;
 }
 
@@ -193,7 +182,7 @@ main {
     margin-left: 10px;
     margin-bottom: 20px;
     font-family: "Great Vibes", cursive;
-    font-size: xx-large;
+    font-size: 32px;
     font-weight: 900;
     word-spacing: 5px;
     color: #626F47;
@@ -216,9 +205,9 @@ main {
 
 #menu {
     width: 60%;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left: 20%;
-    height: 600px;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -265,7 +254,6 @@ main {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 5px #626F47;
   transition: background-color 0.3s ease;
 }
 
@@ -274,10 +262,6 @@ main {
     height: 75%;
     object-fit: cover;
     overflow: visible;
-}
-
-.flickity-button:hover {
-  background-color: #a4b465;
 }
 
 .flickity-button:disabled {
@@ -301,7 +285,6 @@ main {
   top: 0;
   left: 0;
   right: 0;
-
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.7s ease;
@@ -314,7 +297,7 @@ main {
 
 .feedback {
     width: 100%;
-    margin-top: 100px;
+    margin-top: 200px;
     font-weight: 700;
     display: flex;
     justify-content: baseline;
@@ -340,30 +323,17 @@ form textarea {
     outline: none;
 }
 
-form input:hover,
-form textarea:hover {
-    border: none;
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 207, 80, 1);
-    -moz-box-shadow: 0px 0px 15px 0px rgba(255, 207, 80, 1);
-    box-shadow: 0px 0px 15px 0px rgba(255, 207, 80, 1);
-}
-
 #send {
     width: 200px;
     height: auto;
-    margin-left: 200px;
+    margin-left: 40%;
+    margin-bottom: 10px;
     padding: 10px;
     background: #FFCF50;
     border:1px solid #626F47;
     border-radius: 10px;
     color: #626F47;
     cursor: pointer;
-}
-
-#send:hover {
-    background: #a4b465;
-    color:#FFCF50;
-    border: 1px solid #FFCF50;
 }
 
 .user-info {
@@ -385,7 +355,7 @@ textarea {
     width: 300px;
     height: 150px;
     resize: none;
-    font-size: large;
+    font-size: 18px;
     font-weight: 500;
 }
 
@@ -412,9 +382,7 @@ textarea {
 
 .feedback-message .error {
     color: #CB0404;
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
-    -moz-box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
-    box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
+    border: 1px solid #CB0404;
 }
 
 .feedback-message .preference-added {
@@ -426,7 +394,6 @@ textarea {
     opacity: 1;
     visibility: visible;
 }
-
 
 footer {
     width: 100%;
@@ -453,12 +420,12 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    font-size: xx-large;
+    font-size: 32px;
     object-fit: cover;
     transition: all 0.7s ease;
 }
 
-.social a:hover {transform: scale(1.5);}
+
 
 .fa-instagram {color: #E4405F;}
 
@@ -478,7 +445,7 @@ footer h1 {
 
 address {
     margin-right: 100px;
-    font-size: larger;
+    font-size: 24px;
     font-weight: 600;
 }
 
@@ -506,8 +473,6 @@ body.dark .logo h1 {
 
 body.dark nav a::before {background: #F6C90E;}
 
-body.dark nav a:hover {color:#F6C90E;}
-
 body.dark .lang {background: #3A4750;}
 
 body.dark .lang button {
@@ -515,8 +480,6 @@ body.dark .lang button {
     text-decoration-color: #EEEEEE;
     color: #EEEEEE; 
 }
-
-body.dark .lang button:hover {color: #F6C90E;}
 
 body.dark .slider {background-color: #EEEEEE;}
 
@@ -538,10 +501,6 @@ body.dark .title {
     -webkit-text-stroke: 1px #F6C90E;
 }
 
-body.dark .flickity-button {box-shadow: 0 0 5px #F6C90E;}
-
-body.dark .flickity-button:hover {background-color: #303841;}
-
 body.dark .flickity-button svg path {fill: #F6C90E;}
 
 body.dark form input,
@@ -550,23 +509,10 @@ body.dark form textarea {
     background: #EEEEEE;
 }
 
-body.dark form input:hover,
-body.dark form textarea:hover {
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(246, 201, 14, 1);
-    -moz-box-shadow: 0px 0px 12px 0px rgba(246, 201, 14, 1);
-    box-shadow: 0px 0px 12px 0px rgba(246, 201, 14, 1);
-}
-
 body.dark form button {
     background: #F6C90E;
     border:1px solid #EEEEEE;
     color: #303841;
-}
-
-body.dark form button:hover {
-    background: #303841;
-    color:#EEEEEE;
-    border: 1px solid #F6C90E;
 }
 
 body.dark .feedback-message span {
@@ -575,9 +521,6 @@ body.dark .feedback-message span {
 
 body.dark .feedback-message .error {
     color: #CB0404;
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
-    -moz-box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
-    box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
 }
 
 body.dark .feedback-message .preference-added {
@@ -602,4 +545,217 @@ body.dark footer h1 {
 }
 
 body.dark address a {color: #EEEEEE;}
+
+@media (hover: hover) and (pointer: fine) {
+        
+    nav a:hover {
+        color:#626F47;
+    }
+
+    nav a:hover::before {
+        transform: scaleX(1);
+    }
+
+    .lang button:hover {
+        cursor: pointer;
+        color: #626F47;
+    }
+
+    .flickity-button {box-shadow: 0 0 5px #626F47;}
+
+    .flickity-button:hover {
+        background-color: #a4b465;
+    }
+
+    form input:hover,
+    form textarea:hover {
+        border: none;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 207, 80, 1);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(255, 207, 80, 1);
+        box-shadow: 0px 0px 15px 0px rgba(255, 207, 80, 1);
+    }
+
+    #send:hover {
+        background: #a4b465;
+        color:#FFCF50;
+        border: 1px solid #FFCF50;
+    }
+
+    .feedback-message .error {
+        -webkit-box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
+        -moz-box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
+        box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
+    }
+
+    .social a:hover {transform: scale(1.5);}
+
+    body.dark nav a:hover {color:#F6C90E;}
+
+    body.dark .lang button:hover {color: #F6C90E;}
+
+    body.dark .flickity-button {box-shadow: 0 0 5px #F6C90E;}
+
+    body.dark .flickity-button:hover {background-color: #303841;}
+
+    body.dark form input:hover,
+    body.dark form textarea:hover {
+        -webkit-box-shadow: 0px 0px 12px 0px rgba(246, 201, 14, 1);
+        -moz-box-shadow: 0px 0px 12px 0px rgba(246, 201, 14, 1);
+        box-shadow: 0px 0px 12px 0px rgba(246, 201, 14, 1);
+    }
+
+    body.dark form button:hover {
+        background: #303841;
+        color:#EEEEEE;
+        border: 1px solid #F6C90E;
+    }
+
+    body.dark .feedback-message .error {
+        -webkit-box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
+        -moz-box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
+        box-shadow: 0px 0px 12px 0px rgba(203, 4, 4, 1);
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+
+    header {
+    width: 100%;
+    height: 100px;
+    font-size: 16px;
+  }
+
+  .logo {
+    height: 80px;
+    margin-left: 20px;
+    }
+
+    .logo img {
+    width: 30px;
+    height: 30px;
+    }
+
+
+    .logo h1 {
+    font-weight: 300;
+    font-size: 24px;
+    }
+
+    nav {
+    width: 50%;
+    gap: 30px;
+    }
+
+    nav a {
+        width: 20%;
+        font-weight: 400;
+        font-size: 24px;
+    }
+
+    #about-us {
+        width: 50%;
+        font-weight: 500;
+        font-size: 24px;
+    }
+
+    #about-us h1 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .main-images {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .meal {
+        width: 150px;
+        height: 150px;
+    }
+
+    #menu {
+        width: 90%;
+        margin-top: 70px;
+        margin-left: 5%;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .title {
+        margin-top: 30px;
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .swiper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .feedback {
+        margin-top: 60px;
+        font-weight: 500;
+    }
+
+    form {
+        width: 40%;
+        min-height: 200px;
+        margin: 10px 50px;
+        font-weight: 600;
+    }
+
+    #send {
+        width: 100px;
+        margin-left: 40%;
+    }
+
+    .user-info {gap: 5px;}
+
+    .meal-preferences {
+        margin-left: 30px;
+        gap: 5px;
+    }
+
+    textarea {font-size: 14px;}
+
+    footer {
+        height: 150px;
+    }
+
+    .social {
+        width: 20%;
+        margin-left: 5%;
+        gap: 10px;
+    }
+
+    .social a {
+        width: 20px;
+        height: 20px;
+        font-size: 24px;
+    }
+
+    footer h1 {
+        font-weight: 300;
+        font-size: 24px;
+    }
+
+    address {
+        margin-right: 30px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    address a {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
 

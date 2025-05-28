@@ -42,21 +42,19 @@ const preference = document.querySelector('.preference-added');
 const error = document.querySelector('.feedback .error');
 
 btn.addEventListener('click', (event) => {
-    event.preventDefault(); // зупиняє стандартну дію кнопки
+    event.preventDefault();
 
     const inputs = form.querySelectorAll('input');
     const textareas = form.querySelectorAll('textarea');
 
     let allFilled = true;
 
-    // Перевірка інпутів
     inputs.forEach(input => {
         if (input.value.trim() === '') {
             allFilled = false;
         }
     });
 
-    // Перевірка textarea
     textareas.forEach(textarea => {
         if (textarea.value.trim() === '') {
             allFilled = false;
